@@ -1,4 +1,3 @@
-from turtle import dot
 import pygame
 import platform
 import ctypes
@@ -91,7 +90,6 @@ def main():
     pygame.init()
     if platform.system() == "Windows":
         ctypes.windll.user32.SetProcessDPIAware()
-    hack_font = pygame.font.Font("Hack-Regular.ttf", 24)
     logo = pygame.image.load("logo.png")
     pygame.display.set_icon(logo)
     pygame.display.set_caption(conf.CAPTION_NAME)
